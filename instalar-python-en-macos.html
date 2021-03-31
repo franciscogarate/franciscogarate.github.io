@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es"><!--
+Saludos desde Gotham, la ciudad sin tecla de tabulador.
+       _,    _   _    ,_
+  .o888P     Y8o8Y     Y888o.
+ d88888      88888      88888b
+d888888b_  _d88888b_  _d888888b
+8888888888888888888888888888888
+8888888888888888888888888888888
+YJGS8P"Y888P"Y888P"Y888P"Y8888P
+ Y888   '8'   Y8P   '8'   888Y
+  '8o          V          o8'
+    `                     `
+Why so serious? "The Joker"
+-->
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>
+    
+      Instalar Python3 en macOS
+    
+  </title>
+
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Instalar Python3 en macOS" />
+<meta name="author" content="Riccardo Graziosi" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="La versión 2.7 de Python viene instalada por defecto en las últimas distribuciones de macOS, y parece ser que no podemos desinstalarla ya que es utilizada internamente en algún proceso de macOS. Así que no hay mas remedio que tener instaladas las dos versiones de Python en nuestro equipo." />
+<meta property="og:description" content="La versión 2.7 de Python viene instalada por defecto en las últimas distribuciones de macOS, y parece ser que no podemos desinstalarla ya que es utilizada internamente en algún proceso de macOS. Así que no hay mas remedio que tener instaladas las dos versiones de Python en nuestro equipo." />
+<link rel="canonical" href="http://localhost:4000/instalar-python-en-macos.html" />
+<meta property="og:url" content="http://localhost:4000/instalar-python-en-macos.html" />
+<meta property="og:site_name" content="Francisco Gárate, Actuario" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-07-26T19:00:00+02:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"http://localhost:4000/instalar-python-en-macos.html","headline":"Instalar Python3 en macOS","dateModified":"2020-07-26T19:00:00+02:00","datePublished":"2020-07-26T19:00:00+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/instalar-python-en-macos.html"},"author":{"@type":"Person","name":"Riccardo Graziosi"},"description":"La versión 2.7 de Python viene instalada por defecto en las últimas distribuciones de macOS, y parece ser que no podemos desinstalarla ya que es utilizada internamente en algún proceso de macOS. Así que no hay mas remedio que tener instaladas las dos versiones de Python en nuestro equipo.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Francisco Gárate, Actuario" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="./logo.png" />
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css" />
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1137039-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1137039-2');
+</script>
+</head><body>
+    <header>
+        <div class="container site-header">
+            <div class="left">
+                <a class="home" href="/">
+                <h1 class="site-title">Francisco Gárate</h1>
+                <p class="subtitle">Actuario</p>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="page-content" aria-label="Content">
+        <div class="wrapper">
+            <a href="http://localhost:4000">..</a>
+<h1>Instalar Python3 en macOS</h1>
+<p>La versión 2.7 de Python viene instalada por defecto en las últimas distribuciones de macOS, y parece ser que no podemos desinstalarla ya que es utilizada internamente en algún proceso de macOS. Así que no hay mas remedio que tener instaladas las dos versiones de Python en nuestro equipo.</p>
+
+<p><img src="/assets/images/install_osx_pkg.png" alt="Picture" /></p>
+
+<p>Al compartir ambas versiones, para ejecutar la última versión de Python habrá que reemplazar el comando de <em>python</em> y <em>pip</em> por <strong>python3</strong> y <strong>pip3</strong>. Sin embargo, existe un truco para no tener que preocuparnos continuamente de la versión que se ejecuta. Consiste que crearnos un alias para que cada vez que se ejecute el comando “python” y el sistema ejecute automáticamente “python3” (al igual pasaría con el instalador pip).</p>
+
+<p>Para ello, en el caso de utilizar macOS Catalina (macOS 10.15) habría que añadir los siguientes alias al fichero <code class="language-plaintext highlighter-rouge">.zshrc</code> (en la carpeta home del usuario), fichero que puede modificarse desde la consola con el comando <code class="language-plaintext highlighter-rouge">nano .zshrc</code> o con el programa textEdit o similar.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">alias </span><span class="nv">python</span><span class="o">=</span><span class="s1">'python3'</span>
+<span class="nb">alias </span><span class="nv">pip3</span><span class="o">=</span><span class="s1">'python3 -m pip'</span>
+<span class="nb">alias </span><span class="nv">pip</span><span class="o">=</span><span class="s1">'pip3'</span>
+</code></pre></div></div>
+
+<p><img src="/assets/images/install_osx_zshrc.png" alt="Picture" /></p>
+
+<p>En el caso de versiones de macOS anteriores, el fichero a modificar es <code class="language-plaintext highlighter-rouge">.bash_profile</code></p>
+
+<p>Una vez modificado el fichero correspondiente, volver a cargar la preferencias de usuario ejecutando <code class="language-plaintext highlighter-rouge">su nombreusuario</code> y ya podremos comprobar que funciona como deseamos.</p>
+
+<p><img src="/assets/images/install_osx_version.png" alt="Picture" /></p>
+
+
+        </div>
+    </main>
+
+    
+    </body>
+</html>
