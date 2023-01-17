@@ -17,3 +17,4 @@ sklearn
 scikit-learn
 dateutils
 seaborn
+prophet
