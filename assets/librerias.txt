@@ -14,7 +14,6 @@ bs4
 pyliferisk
 scipy
 statsmodels
-sklearn
 scikit-learn
 dateutils
 seaborn
