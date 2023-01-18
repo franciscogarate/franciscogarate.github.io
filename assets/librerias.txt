@@ -10,8 +10,6 @@ xlwt
 lxml
 openpyxl
 html5lib
-bs4
-pyliferisk
 scipy
 statsmodels
 scikit-learn
