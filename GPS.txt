@@ -1,0 +1,26 @@
+HOTEL 1 
+Scandic Kødbyen
+Skelbækgade 3A, 1717 København, Dinamarca
+55.667, 12.557
+
+HOTEL 2
+Scandic Webers
+Vesterbrogade 11B, 1620 København, Dinamarca
+55.6733,12.561
+
+Europcar København
+Gammel Kongevej 13, 1610 København, Dinamarca
+55.6741,12.558
+
+
+B&B Vesterhede
+Vesterhedevej 33, 7250 Hejnsvig, Dinamarca
+55.708,8.912
+
+Legoland Billund
+Nordmarksvej 9, 7190 Billund, Dinamarca
+parking: 55.736,9.132
+
+Aquadome Billund (Lalandia)
+Ellehammers Alle 3, 7190 Billund, Dinamarca
+55.733,9.136
