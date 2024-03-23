@@ -16,4 +16,7 @@ scikit-learn
 dateutils
 seaborn
 pyarrow
-seaborn
+prophet
+plotly
+folium
+geopy
