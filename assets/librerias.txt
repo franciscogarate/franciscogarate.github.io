@@ -1,22 +1,43 @@
-jupyter
-jupyterlab
-matplotlib
-notebook
+# Data Science
 numpy
+pandas==2.2.2
+scipy
+statsmodels
+scikit-learn
+
+# Financieras Actuarial
 numpy-financial
-pandas
+pyliferisk
+
+# Base de datos
+#kedro
+#kedro-datasets
+#kedro-telemetry
+
+# Graficos
+matplotlib
+seaborn
+pyarrow
+plotly
+
+# Excel
 xlrd
 xlwt
 lxml
 openpyxl
 html5lib
-scipy
-statsmodels
-scikit-learn
-dateutils
-seaborn
-pyarrow
-prophet
-plotly
+pyxlsb
+#xlsxwriter
+
+# Jupyter
+jupyter
+#jupyterlab
+#notebook
+
+# Geoespaciales
 folium
 geopy
+
+# Otras
+dateutils
+prophet~=1.1.5
