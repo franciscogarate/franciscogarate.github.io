@@ -1,16 +1,16 @@
 # Data Science
-numpy
+numpy==2.1.0
 pandas==2.2.2
-scipy
-statsmodels
-scikit-learn
+scipy==1.14.1
+statsmodels==0.14.1
+scikit-learn==1.5.1
 
 # Financieras Actuarial
 numpy-financial
 pyliferisk
 
 # Base de datos
-#kedro
+kedro==0.18.14
 #kedro-datasets
 #kedro-telemetry
 
@@ -21,10 +21,10 @@ pyarrow
 plotly
 
 # Excel
-xlrd
+openpyxl<4.0.0,>=3.0.6
+xlrd==2.0.1
 xlwt
 lxml
-openpyxl
 html5lib
 pyxlsb
 #xlsxwriter
