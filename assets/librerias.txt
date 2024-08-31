@@ -10,7 +10,7 @@ numpy-financial
 pyliferisk
 
 # Base de datos
-kedro==0.18.14
+kedro==0.19.0
 #kedro-datasets
 #kedro-telemetry
 
