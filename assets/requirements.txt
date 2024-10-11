@@ -25,7 +25,7 @@ lxml==4.9.4
 xlwt
 html5lib
 pyxlsb
-#xlsxwriter
+xlsxwriter
 
 # Notebooks + code quality 
 jupyter~=1.0
