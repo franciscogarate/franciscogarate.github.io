@@ -1,11 +1,21 @@
+# Env
+python-dotenv
+dotenv
+
 # Data Science
-numpy==1.26
+numpy
 pandas==2.2.2
-scipy==1.14.1
-statsmodels==0.14.1
+scipy==1.16.2
+statsmodels==0.14.5
+
+# Data Wrangling
+pyjanitor
+names-dataset
+gender-guesser
 
 # Machine learning
-scikit-learn~=1.0
+scikit-learn~>1.0
+minisom
 
 # Financieras-Actuariales
 numpy-financial
@@ -25,12 +35,13 @@ lxml==4.9.4
 xlwt
 html5lib
 pyxlsb
-xlsxwriter
+#xlsxwriter
 
 # Notebooks + code quality 
 jupyter~=1.0
 jupyterlab_server>=2.11.1
-jupyterlab~=3.0
+jupyterlab~>4.4.8
+jupytext
 #ipython>=7.31.1, <8.0; python_version < '3.8'
 ipython~=8.10; python_version >= '3.8'
 ruff==0.1.8
@@ -40,6 +51,10 @@ kedro~=0.19.0
 kedro-datasets[pandas-csvdataset, pandas-exceldataset, pandas-parquetdataset]>=3.0
 kedro-telemetry>=0.3.1
 kedro-viz~=6.0 # Visualise pipelines
+ipykernel
+s3fs    # S3 Amazon
+adlfs   # Azure Data Lake
+fsspec>=2023.9.0
 
 # Pytest + useful extensions
 pytest-cov~=3.0
@@ -52,3 +67,12 @@ geopy
 
 # Series temporales
 prophet~=1.1.5
+
+# IA
+langchain
+openai
+langchain_openai
+langchain_community
+langgraph
+anthropic
+faiss-cpu
