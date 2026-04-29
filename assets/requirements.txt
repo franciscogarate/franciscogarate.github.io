@@ -30,8 +30,8 @@ plotly
 
 # Excel / OpenDocument
 openpyxl<4.0.0,>=3.0.6
-xlrd==2.0.1
-lxml==4.9.4
+xlrd
+lxml
 html5lib
 pyxlsb
 
