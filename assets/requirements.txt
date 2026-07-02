@@ -68,6 +68,36 @@ pytest~>9.0.3
 folium
 geopy
 
+# Climada (requiere Python >=3.10 y <3.13.)
+bayesian-optimization
+bottleneck
+cartopy
+cfgrib
+contextily
+dask
+deprecation
+fiona
+gdal
+geopandas
+h5py
+haversine
+netcdf4
+numba
+overpy
+pathos
+peewee
+pillow
+pint
+pycountry
+pyproj
+rasterio
+salib
+sparse
+tables
+tabulate
+tqdm
+xarray
+
 # Series temporales
 prophet~=1.1.5
 
