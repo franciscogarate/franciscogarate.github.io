@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es-es"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="description" content="La versión 2.7 de Python viene instalada por defecto en las últimas distribuciones de macOS, y parece ser que no podemos desinstalarla ya que es utilizada internamente en algún proceso de macOS. Así que no hay mas remedio que tener instaladas las dos versiones de Python en nuestro equipo.
+
+Al compartir ambas versiones, para ejecutar la última versión de Python habrá que reemplazar el comando de python y pip por python3 y pip3. Sin embargo, existe un truco para no tener que preocuparnos continuamente de la versión que se ejecuta. Consiste que crearnos un alias para que cada vez que se ejecute el comando “python” y el sistema ejecute automáticamente “python3” (al igual pasaría con el instalador pip).">  
+
+  <title>
+    
+      Instalar Python3 en macOS
+    
+  </title>
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/logo.png" />
+  
+  
+  
+  <link rel="stylesheet" href="/css/main.51652302d3a998bf7887aed5c2cf89141bbebdf45a2c8f87b0717a3cf4f51c4e53c694c328fb1de78c3a625a1c01f80745bf1f2f42c040647a245cbbb6c2d1d7.css" integrity="sha512-UWUjAtOpmL94h67Vws&#43;JFBu&#43;vfRaLI&#43;HsHF6PPT1HE5TxpTDKPsd54w6YlocAfgHRb8fL0LAQGR6JFy7tsLR1w==" />
+  
+</head>
+<body a="auto">
+        <main class="page-content" aria-label="Content">
+            <div class="w">
+                <div class="post-meta">
+                    <a href="/">..</a>
+
+                    <p>
+                        <time datetime="2020-07-26 19:00:00 &#43;0200 CEST">
+                            2020-07-26
+                        </time>
+                    </p>
+                </div>
+
+<article>
+    <h1>Instalar Python3 en macOS</h1>
+
+    
+
+    <p>La versión 2.7 de Python viene instalada por defecto en las últimas distribuciones de macOS, y parece ser que no podemos desinstalarla ya que es utilizada internamente en algún proceso de macOS. Así que no hay mas remedio que tener instaladas las dos versiones de Python en nuestro equipo.</p>
+<p><img src="/assets/images/install_osx_pkg.png" alt="Picture"></p>
+<p>Al compartir ambas versiones, para ejecutar la última versión de Python habrá que reemplazar el comando de <em>python</em> y <em>pip</em> por <strong>python3</strong> y <strong>pip3</strong>. Sin embargo, existe un truco para no tener que preocuparnos continuamente de la versión que se ejecuta. Consiste que crearnos un alias para que cada vez que se ejecute el comando “python” y el sistema ejecute automáticamente “python3” (al igual pasaría con el instalador pip).</p>
+<p>Para ello, en el caso de utilizar macOS Catalina (macOS 10.15) habría que añadir los siguientes alias al fichero <code>.zshrc</code> (en la carpeta home del usuario), fichero que puede modificarse desde la consola con el comando <code>nano .zshrc</code> o con el programa textEdit o similar.</p>
+<pre tabindex="0"><code class="language-highlight" data-lang="highlight">alias python=&#39;python3&#39;
+alias pip3=&#39;python3 -m pip&#39;
+alias pip=&#39;pip3&#39;
+</code></pre><p><img src="/assets/images/install_osx_zshrc.png" alt="Picture"></p>
+<p>En el caso de versiones de macOS anteriores, el fichero a modificar es <code>.bash_profile</code></p>
+<p>Una vez modificado el fichero correspondiente, volver a cargar la preferencias de usuario ejecutando <code>su nombreusuario</code> y ya podremos comprobar que funciona como deseamos.</p>
+<p><img src="/assets/images/install_osx_version.png" alt="Picture"></p>
+
+</article>
+
+            </div>
+        </main>
+    </body></html>
