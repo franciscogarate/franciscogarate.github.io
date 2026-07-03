@@ -6,8 +6,15 @@
     <description>Recent content on Francisco Gárate</description>
     <generator>Hugo</generator>
     <language>es-es</language>
-    <lastBuildDate>Wed, 01 Jan 2025 12:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jul 2026 00:00:00 +0200</lastBuildDate>
     <atom:link href="https://garpa.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Instalar Python3 en macOS</title>
+      <link>https://garpa.net/posts/instalar-python-en-macos/</link>
+      <pubDate>Sat, 04 Jul 2026 00:00:00 +0200</pubDate>
+      <guid>https://garpa.net/posts/instalar-python-en-macos/</guid>
+      <description>&lt;p&gt;La forma más sencilla y recomendable de instalar la última versión de Python en macOS es utilizar &lt;a href=&#34;https://brew.sh&#34;&gt;Homebrew&lt;/a&gt;, el gestor de paquetes más popular en Mac. Así evitamos depender de la versión de Python que trae el sistema y podremos actualizarla fácilmente en el futuro.&lt;/p&gt;&#xA;&lt;h2 id=&#34;instalar-homebrew&#34;&gt;Instalar Homebrew&lt;/h2&gt;&#xA;&lt;p&gt;Si todavía no tenemos Homebrew instalado, basta con ejecutar en la Terminal:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-highlight&#34; data-lang=&#34;highlight&#34;&gt;/bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&amp;#34;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Al terminar, el propio instalador nos indicará un par de comandos que debemos ejecutar para añadir Homebrew al PATH. Una vez hecho, podemos comprobar que está correctamente instalado con:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Evitar el código espagueti. Recomendaciones al iniciar un proyecto en Python</title>
       <link>https://garpa.net/posts/evitar-codigo-espagueti/</link>
@@ -35,13 +42,6 @@
       <pubDate>Fri, 01 Sep 2023 12:00:00 +0200</pubDate>
       <guid>https://garpa.net/posts/pyliferisk-v1-11/</guid>
       <description>&lt;p&gt;Pyliferisk is a python library for life actuarial calculations, simple, powerful and easy-to-use.&lt;/p&gt;&#xA;&lt;p&gt;Date: 2019-11-02&lt;br&gt;&#xA;Version: 1.11&lt;br&gt;&#xA;Author: Francisco Garate - fgaratesantiago (at) gmail (dot) com&lt;/p&gt;&#xA;&lt;h2 id=&#34;documentation&#34;&gt;Documentation&lt;/h2&gt;&#xA;&lt;p&gt;Documentation: &lt;a href=&#34;https://github.com/franciscogarate/pyliferisk/raw/master/documentation_1.11.pdf&#34;&gt;documentation.pdf&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Pyliferisk&lt;/strong&gt; is an open library written in Python for life and actuarial calculation contracts, based on commonly used methodologies among actuaries (International Actuarial Notation).&lt;/p&gt;&#xA;&lt;p&gt;This library is able to cover all life contingencies risks (since the actuarial formulas follow the International Actuarial Notation), as well as to support the main insurance products.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Instalar Python3 en macOS</title>
-      <link>https://garpa.net/posts/instalar-python-en-macos/</link>
-      <pubDate>Sun, 26 Jul 2020 19:00:00 +0200</pubDate>
-      <guid>https://garpa.net/posts/instalar-python-en-macos/</guid>
-      <description>&lt;p&gt;La versión 2.7 de Python viene instalada por defecto en las últimas distribuciones de macOS, y parece ser que no podemos desinstalarla ya que es utilizada internamente en algún proceso de macOS. Así que no hay mas remedio que tener instaladas las dos versiones de Python en nuestro equipo.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://garpa.net/assets/images/install_osx_pkg.png&#34; alt=&#34;Picture&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Al compartir ambas versiones, para ejecutar la última versión de Python habrá que reemplazar el comando de &lt;em&gt;python&lt;/em&gt; y &lt;em&gt;pip&lt;/em&gt; por &lt;strong&gt;python3&lt;/strong&gt; y &lt;strong&gt;pip3&lt;/strong&gt;. Sin embargo, existe un truco para no tener que preocuparnos continuamente de la versión que se ejecuta. Consiste que crearnos un alias para que cada vez que se ejecute el comando “python” y el sistema ejecute automáticamente “python3” (al igual pasaría con el instalador pip).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Holiday calendars with Pandas</title>

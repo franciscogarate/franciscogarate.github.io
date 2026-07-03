@@ -1,0 +1,13 @@
+{
+	"version": 3,
+	"file": "custom.css",
+	"sourceRoot": "/Users/paco/Proyectos/Site",
+	"sources": [
+		"assets/css/custom.scss"
+	],
+	"sourcesContent": [
+		"// Cabecera de la web antigua: banda a ancho completo con el mapa (illa_h.jpg).\n// Solo afecta a la portada (el <header> es hijo directo de .w en index.html).\n\nhtml { overflow-x: hidden; } // el breakout con 100vw puede sobrar el ancho del scrollbar\n\n.w > header {\n  width: 100vw;\n  margin: -4rem 0 3rem calc(50% - 50vw);\n  padding: 1.5rem 1.5rem 1.5rem 15%;\n  box-sizing: border-box;\n  background-color: #ffffff;\n  background-image: url(\"/assets/images/illa_h.jpg\");\n  background-size: contain;\n  background-position: center;\n  background-repeat: no-repeat;\n  border-bottom: 1px solid #e6e6e6;\n  box-shadow: 0 4px 8px -6px grey;\n  opacity: 0.75;\n  color: #111; // la banda es blanca también en modo oscuro\n\n  h1 {\n    font-size: 1.4rem;\n    margin: 0;\n  }\n\n  p {\n    color: #3d3d3d;\n    font-size: 1.2rem;\n    font-weight: 100;\n    margin: 0;\n  }\n}\n"
+	],
+	"names": [],
+	"mappings": "AAGA,AAAA,IAAI,AAAC,CAAE,UAAU,CAAE,MAAM,CAAI,AAE7B,AAAA,EAAE,CAAG,MAAM,AAAC,CACV,KAAK,CAAE,KAAK,CACZ,MAAM,CAAG,KAAI,CAAC,CAAC,CAAC,IAAI,CAAC,gBAAgB,CACrC,OAAO,CAAE,wBAAwB,CACjC,UAAU,CAAE,UAAU,CACtB,gBAAgB,CAAE,OAAO,CACzB,gBAAgB,CAAE,gCAAgC,CAClD,eAAe,CAAE,OAAO,CACxB,mBAAmB,CAAE,MAAM,CAC3B,iBAAiB,CAAE,SAAS,CAC5B,aAAa,CAAE,iBAAiB,CAChC,UAAU,CAAE,mBAAmB,CAC/B,OAAO,CAAE,IAAI,CACb,KAAK,CAAE,IAAI,CAaZ,AA1BD,AAeE,EAfA,CAAG,MAAM,CAeT,EAAE,AAAC,CACD,SAAS,CAAE,MAAM,CACjB,MAAM,CAAE,CAAC,CACV,AAlBH,AAoBE,EApBA,CAAG,MAAM,CAoBT,CAAC,AAAC,CACA,KAAK,CAAE,OAAO,CACd,SAAS,CAAE,MAAM,CACjB,WAAW,CAAE,GAAG,CAChB,MAAM,CAAE,CAAC,CACV"
+}

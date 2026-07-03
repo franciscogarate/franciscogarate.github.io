@@ -3,7 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://garpa.net/</loc>
-    <lastmod>2025-01-01T12:00:00+01:00</lastmod>
+    <lastmod>2026-07-04T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://garpa.net/posts/instalar-python-en-macos/</loc>
+    <lastmod>2026-07-04T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://garpa.net/posts/</loc>
+    <lastmod>2026-07-04T00:00:00+02:00</lastmod>
   </url><url>
     <loc>https://garpa.net/posts/evitar-codigo-espagueti/</loc>
     <lastmod>2025-01-01T12:00:00+01:00</lastmod>
@@ -11,17 +17,11 @@
     <loc>https://garpa.net/posts/instalacion-python-librerias/</loc>
     <lastmod>2025-01-01T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://garpa.net/posts/</loc>
-    <lastmod>2025-01-01T12:00:00+01:00</lastmod>
-  </url><url>
     <loc>https://garpa.net/posts/manual-python-actuarios/</loc>
     <lastmod>2024-09-01T12:00:00+02:00</lastmod>
   </url><url>
     <loc>https://garpa.net/posts/pyliferisk-v1-11/</loc>
     <lastmod>2023-09-01T12:00:00+02:00</lastmod>
-  </url><url>
-    <loc>https://garpa.net/posts/instalar-python-en-macos/</loc>
-    <lastmod>2020-07-26T19:00:00+02:00</lastmod>
   </url><url>
     <loc>https://garpa.net/posts/holiday-calendars-with-pandas/</loc>
     <lastmod>2019-07-04T19:00:00+02:00</lastmod>

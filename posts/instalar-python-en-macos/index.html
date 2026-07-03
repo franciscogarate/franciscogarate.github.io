@@ -17,9 +17,11 @@ Why so serious? "The Joker"
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-   <meta name="description" content="La versión 2.7 de Python viene instalada por defecto en las últimas distribuciones de macOS, y parece ser que no podemos desinstalarla ya que es utilizada internamente en algún proceso de macOS. Así que no hay mas remedio que tener instaladas las dos versiones de Python en nuestro equipo.
-
-Al compartir ambas versiones, para ejecutar la última versión de Python habrá que reemplazar el comando de python y pip por python3 y pip3. Sin embargo, existe un truco para no tener que preocuparnos continuamente de la versión que se ejecuta. Consiste que crearnos un alias para que cada vez que se ejecute el comando “python” y el sistema ejecute automáticamente “python3” (al igual pasaría con el instalador pip).">  
+   <meta name="description" content="La forma más sencilla y recomendable de instalar la última versión de Python en macOS es utilizar Homebrew, el gestor de paquetes más popular en Mac. Así evitamos depender de la versión de Python que trae el sistema y podremos actualizarla fácilmente en el futuro.
+Instalar Homebrew
+Si todavía no tenemos Homebrew instalado, basta con ejecutar en la Terminal:
+/bin/bash -c &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&#34;
+Al terminar, el propio instalador nos indicará un par de comandos que debemos ejecutar para añadir Homebrew al PATH. Una vez hecho, podemos comprobar que está correctamente instalado con:">  
 
   <title>
     
@@ -46,8 +48,8 @@ Al compartir ambas versiones, para ejecutar la última versión de Python habrá
                     <a href="/">..</a>
 
                     <p>
-                        <time datetime="2020-07-26 19:00:00 &#43;0200 CEST">
-                            2020-07-26
+                        <time datetime="2026-07-04 00:00:00 &#43;0200 CEST">
+                            2026-07-04
                         </time>
                     </p>
                 </div>
@@ -57,17 +59,27 @@ Al compartir ambas versiones, para ejecutar la última versión de Python habrá
 
     
 
-    <p>La versión 2.7 de Python viene instalada por defecto en las últimas distribuciones de macOS, y parece ser que no podemos desinstalarla ya que es utilizada internamente en algún proceso de macOS. Así que no hay mas remedio que tener instaladas las dos versiones de Python en nuestro equipo.</p>
-<p><img src="/assets/images/install_osx_pkg.png" alt="Picture"></p>
-<p>Al compartir ambas versiones, para ejecutar la última versión de Python habrá que reemplazar el comando de <em>python</em> y <em>pip</em> por <strong>python3</strong> y <strong>pip3</strong>. Sin embargo, existe un truco para no tener que preocuparnos continuamente de la versión que se ejecuta. Consiste que crearnos un alias para que cada vez que se ejecute el comando “python” y el sistema ejecute automáticamente “python3” (al igual pasaría con el instalador pip).</p>
-<p>Para ello, en el caso de utilizar macOS Catalina (macOS 10.15) habría que añadir los siguientes alias al fichero <code>.zshrc</code> (en la carpeta home del usuario), fichero que puede modificarse desde la consola con el comando <code>nano .zshrc</code> o con el programa textEdit o similar.</p>
-<pre tabindex="0"><code class="language-highlight" data-lang="highlight">alias python=&#39;python3&#39;
-alias pip3=&#39;python3 -m pip&#39;
-alias pip=&#39;pip3&#39;
-</code></pre><p><img src="/assets/images/install_osx_zshrc.png" alt="Picture"></p>
-<p>En el caso de versiones de macOS anteriores, el fichero a modificar es <code>.bash_profile</code></p>
-<p>Una vez modificado el fichero correspondiente, volver a cargar la preferencias de usuario ejecutando <code>su nombreusuario</code> y ya podremos comprobar que funciona como deseamos.</p>
-<p><img src="/assets/images/install_osx_version.png" alt="Picture"></p>
+    <p>La forma más sencilla y recomendable de instalar la última versión de Python en macOS es utilizar <a href="https://brew.sh">Homebrew</a>, el gestor de paquetes más popular en Mac. Así evitamos depender de la versión de Python que trae el sistema y podremos actualizarla fácilmente en el futuro.</p>
+<h2 id="instalar-homebrew">Instalar Homebrew</h2>
+<p>Si todavía no tenemos Homebrew instalado, basta con ejecutar en la Terminal:</p>
+<pre tabindex="0"><code class="language-highlight" data-lang="highlight">/bin/bash -c &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&#34;
+</code></pre><p>Al terminar, el propio instalador nos indicará un par de comandos que debemos ejecutar para añadir Homebrew al PATH. Una vez hecho, podemos comprobar que está correctamente instalado con:</p>
+<pre tabindex="0"><code class="language-highlight" data-lang="highlight">brew --version
+</code></pre><h2 id="instalar-python">Instalar Python</h2>
+<p>Con Homebrew ya funcionando, instalar Python es tan sencillo como:</p>
+<pre tabindex="0"><code class="language-highlight" data-lang="highlight">brew install python
+</code></pre><h2 id="comprobar-la-instalación">Comprobar la instalación</h2>
+<p>Para verificar que todo ha ido bien, comprobamos la versión instalada y que el comando apunta a la instalación de Homebrew:</p>
+<pre tabindex="0"><code class="language-highlight" data-lang="highlight">python3 --version
+</code></pre><h2 id="crear-un-entorno-virtual">Crear un entorno virtual</h2>
+<p>Es muy recomendable trabajar siempre con entornos virtuales para aislar las dependencias de cada proyecto. Para crear uno y activarlo:</p>
+<pre tabindex="0"><code class="language-highlight" data-lang="highlight">python3 -m venv .venv
+source .venv/bin/activate
+</code></pre><p>Con el entorno virtual activado, el comando <code>python</code> apuntará automáticamente a la versión del entorno, sin necesidad de crear alias.</p>
+<h2 id="actualizar-pip">Actualizar pip</h2>
+<p>Por último, conviene actualizar pip a su última versión dentro del entorno:</p>
+<pre tabindex="0"><code class="language-highlight" data-lang="highlight">python -m pip install --upgrade pip
+</code></pre><p>Y con esto ya tenemos Python listo para trabajar en macOS.</p>
 
 </article>
 
